@@ -198,13 +198,13 @@ s = bytearray.fromhex("68 74 74 70 73 3A 2F 2F 67 69 74 68 75 62 2E 63 6F 6D 2F 
 u = bytearray.fromhex("49  54 7A 5F 4C 45 47 45 4E 44 5F 43 4F 44 45 52").decode()
 d= bytearray.fromhex("4D 52 5F 53 55 4B 4B 55 4E").decode()
 if SOURCE != s:
-    print("So sad, you have changed source, change it back to ` https://github.com/Noob-mukesh/Chatgpt-bot`  else I won't work")
+    print("So sad, you have changed source, change it back to ` https://github.com/Noob-mukesh/Chatgpt-bot `  else I won't work")
     sys.exit(1)  
 if DEVELOPER!=u:
-    print("So sad, you have changed Updates, change it back to itz_legend_coder else I won't work")
+    print("So sad, you have changed Updates, change it back to `ITz_LEGEND_CODER ` else I won't work")
     sys.exit(1)
 if UPDATE_CHNL!=d:
-    print("So sad, you have change developer, change it back to MR_SUKKUN else I won't work")
+    print("So sad, you have change developer, change it back to `MR_SUKKUN ` else I won't work")
     sys.exit(1)
 
 
@@ -219,7 +219,7 @@ if __name__ == "__main__":
         raise Exception("Your API_ID/API_HASH is not valid.")
     except AccessTokenInvalid:
         raise Exception("Your BOT_TOKEN is not valid.")
-    print("""JOIN  @MR_SUKKUN
+    print(f"""JOIN  @MR_SUKKUN
 GIVE STAR TO THE REPO 
  {BOT_NAME} ɪs ᴀʟɪᴠᴇ!  
     """)
