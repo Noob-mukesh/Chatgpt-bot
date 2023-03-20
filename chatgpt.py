@@ -226,3 +226,6 @@ GIVE STAR TO THE REPO
     idle()
     Mukesh.stop()
     print("Bot stopped. Bye !")
+#-----------CREDITS -----------
+# telegram : @itz_legend_coder
+# github : noob-mukesh
