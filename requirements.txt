@@ -1,0 +1,5 @@
+pyrogram==2.0.102
+requests
+dnspython
+tgcrypto
+openai==0.27.2
