@@ -1,5 +1,6 @@
-pyrogram==2.0.102
+pyrogram
 requests
 dnspython
 tgcrypto
+asyncio
 openai==0.27.2
