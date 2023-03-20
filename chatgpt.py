@@ -208,7 +208,7 @@ if UPDATE_CHNL!=d:
     sys.exit(1)
 
 
-if name == "main":
+if __name__ == "__main__":
     print(f""" {BOT_NAME} ɪs ᴀʟɪᴠᴇ!
     """)
     try:
