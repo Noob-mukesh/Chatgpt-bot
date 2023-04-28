@@ -31,10 +31,10 @@ Mukesh = Client(
 )
 START = f"""
 ๏ ʜᴇʏ, ɪ ᴀᴍ {BOT_NAME}
-➻ ᴀɴ ᴏᴘᴇɴ-ᴀɪ-ʙᴀsᴇᴅ ᴄʜᴀᴛɢᴘᴛ.
+➻ ᴀɴ ᴏᴘᴇɴ-ᴀɪ-ʙᴀsᴇᴅ V-ᴄʜᴀᴛɢᴘᴛ.
 ──────────────────
 ➻ ᴜsᴀɢᴇ:\n\n `/chatgpt` : Ask AnyThing.
-    example: `/chatgpt Where is TajMahal?`
+    example: `/chatgpt Who is the C.E.O of Vedantu?`
 
 ๏ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴜsᴇ /help
 """
@@ -42,8 +42,8 @@ xa = bytearray.fromhex("68 74 74 70 73 3A 2F 2F 67 69 74 68 75 62 2E 63 6F 6D 2F
 axx = bytearray.fromhex("49  54 7A 5F 4C 45 47 45 4E 44 5F 43 4F 44 45 52").decode()
 xxc = bytearray.fromhex("4D 52 5F 53 55 4B 4B 55 4E").decode()
 SOURCE = xa
-UPDATE_CHNL = xxc
-DEVELOPER = axx
+UPDATE_CHNL = v_vap
+DEVELOPER = anukarmishra
 SOURCE_TEXT = f"""
 ๏ ʜᴇʏ, ɪ ᴀᴍ [{BOT_NAME}]
 ➻ ᴀɴ ᴏᴘᴇɴ-ᴀɪ-ʙᴀsᴇᴅ ᴄʜᴀᴛɢᴘᴛ.
@@ -61,7 +61,7 @@ MAIN = [
     ],
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
+            text="ᴀᴅᴅ ᴍᴇ BUDDY",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
@@ -84,7 +84,7 @@ X = [
 PNG_BTN = [
     [
          InlineKeyboardButton(
-             text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
+             text="ᴀᴅᴅ ᴍᴇ BUDDY",
              url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
          ),
      ],
@@ -95,7 +95,7 @@ PNG_BTN = [
      ],
 ]
 SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('sᴏᴜʀᴄᴇ', url=f"{SOURCE}")]])
-HELP_READ = "➻ ᴜsᴇ /chatgpt write a simple flask app in python.  \n\n **➻ ᴜsᴇ /ping ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.**\n\n©️ @mr_sukkun**"
+HELP_READ = "➻ ᴜsᴇ /chatgpt write a simple flask app in python.  \n\n **➻ ᴜsᴇ /ping ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.**\n\n©️ @v_vap**"
 HELP_BACK = [
      [
            InlineKeyboardButton(text="Qᴜᴇꜱᴛɪᴏɴ ᴛʜᴀᴛ ᴄʜᴀᴛɢᴘᴛ ᴄᴀɴ ꜱᴏʟᴠᴇ ", url=f"https://t.me/{UPDATE_CHNL}/528"),
@@ -163,13 +163,13 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG,
-                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME}) ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [ᴍᴜᴋᴇsʜ](https://t.me/itz_legend_coder)||",
+                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME}) ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [ᴀɴᴜᴋᴀʀ](https://t.me/ANUKARMISHRA)||",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
 #  main   
 openai.api_key = OPENAI_KEY
-@Mukesh.on_message(filters.command(["chatgpt","ai","ask"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
+@Mukesh.on_message(filters.command(["chatgpt","V","ask"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
 async def chat(bot, message):
     
     try:
@@ -177,7 +177,7 @@ async def chat(bot, message):
         await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
         if len(message.command) < 2:
             await message.reply_text(
-            "Example:**\n\n`/chatgpt Where is TajMahal?`")
+            "Example:**\n\n`/chatgpt Who is the C.E.O of Vedantu`")
         else:
 
             a = message.text.split(' ', 1)[1]
@@ -238,10 +238,10 @@ d= bytearray.fromhex("4D 52 5F 53 55 4B 4B 55 4E").decode()
 if SOURCE != s:
     print("So sad, you have changed source, change it back to ` https://github.com/Noob-mukesh/Chatgpt-bot `  else I won't work")
     sys.exit(1)  
-if DEVELOPER!=u:
+if DEVELOPER!= anukarmishra:
     print("So sad, you have changed Updates, change it back to `ITz_LEGEND_CODER ` else I won't work")
     sys.exit(1)
-if UPDATE_CHNL!=d:
+if UPDATE_CHNL!= v_vap:
     print("So sad, you have change developer, change it back to `MR_SUKKUN ` else I won't work")
     sys.exit(1)
 
@@ -257,7 +257,7 @@ if __name__ == "__main__":
         raise Exception("Your API_ID/API_HASH is not valid.")
     except AccessTokenInvalid:
         raise Exception("Your BOT_TOKEN is not valid.")
-    print(f"""JOIN  @MR_SUKKUN
+    print(f"""JOIN  @v_vap
 GIVE STAR TO THE REPO 
  {BOT_NAME} ɪs ᴀʟɪᴠᴇ!  
     """)
