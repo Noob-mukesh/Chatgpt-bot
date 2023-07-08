@@ -90,7 +90,7 @@
 
  ━━━━━━━━━━━━━━━━━━━━━━
 <h3> ʜᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ </h3>
-<h2> <a href="https://youtu.be/Onq2zNgVQ-U"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/YT_nYVb0OxI",width="500" height="70">
+<h2> <a href="https://youtu.be/Onq2zNgVQ-U"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/Onq2zNgVQ-U",width="500" height="70">
   </a>  </h2>
   ━━━━━━━━━━━━━━━━━━━━
 
