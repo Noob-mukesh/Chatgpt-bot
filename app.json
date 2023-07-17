@@ -16,7 +16,11 @@
         "BOT_TOKEN": {
             "description": "telegram bot token here",
             "required": true
-        },        
+        },  
+        "OWNER_USERNAME": {
+            "description": "Owner Username without @",
+            "required": false
+        },    
         "OPENAI_KEY": {
             "description":"OPEN-AI key here: extract from https://platform.openai.com/account/api-keys",
             "required": true
@@ -40,6 +44,14 @@
         },
         "START_IMG": {
             "description": "Start Image For Bot.",
+            "required": false
+        },
+        "UPDATE_CHNL": {
+            "description": "Your Updates Channel without @",
+            "required": false
+        },
+        "SUPPORT_GRP": {
+            "description": "Your Support Group without @",
             "required": false
         },
         "API_ID": {
