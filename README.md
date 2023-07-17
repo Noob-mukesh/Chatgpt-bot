@@ -118,7 +118,7 @@
 
 ### ᴄʀᴇᴅɪᴛs 
 # 
-<b> [─╼⃝𖠁 ᴍᴜᴋᴇsʜ 𖠁⃝╾─•](https://telegram.me/itz_LEGEND_CODER) <br> <br>
+<b> [─╼⃝𖠁 ᴍᴜᴋᴇsʜ 𖠁⃝╾─•](https://telegram.me/LEGEND_CODER) <br> <br>
  [­ 𝔼𝕣𝕖𝕟](https://telegram.me/WH0907)  </br> <br>
  [ [🇮🇳]◊⃟_ѕнιиιиg〆ѕταʀـϟ ⃝⃟🥀 ⃝࿐](https://telegram.me/NotLobe)<br>
 <details>
