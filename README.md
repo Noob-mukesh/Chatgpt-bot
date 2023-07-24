@@ -132,7 +132,7 @@ Press `Ctrl+C` when you're done with editing config and `:wq` to save the config
 `python3 chatgpt.py`
 - For getting out from tmux session
 
-Press `Ctrl+b` and then `d`
+Press `Ctrl+b` and then `d`</details>
 
 
 <i>sᴀᴍᴘʟᴇ ʙᴏᴛ ɪs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ, ʏᴏᴜ ᴄᴀɴ ᴄʜᴇᴀᴋ ᴛʜᴀᴛ.</i>
