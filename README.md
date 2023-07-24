@@ -98,13 +98,47 @@
 <pre><i>ᴇɴᴛᴇʀ ᴛʜᴇ ʀᴇǫᴜɪʀᴇᴅ ᴠᴀʀs ɪɴ ᴛʜᴇ ʜᴇʀᴜᴋᴏ.</i></pre>
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Noob-mukesh/chatgpt-bot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
+h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴘs/ʟᴏᴄᴀʟ 」─
+</h3>
 
+<details>
+<summary><h3>
+- <b> ᴠᴘs/ʟᴏᴄᴀʟ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅ </b>
+</h3></summary>
+
+- Get your [Necessary Variables](https://github.com/Noob-mukesh/Chatgpt-bot/blob/main/config.py)
+- Upgrade and Update by :
+`sudo apt-get update && sudo apt-get upgrade -y`
+- Install required packages by :
+`sudo apt-get install python3-pip -y`
+- Install pip by :
+`sudo pip3 install -U pip`
+- Clone the repository by :
+`git clone https://github.com/Noob-Mukesh/Chatgpt-bot`
+- Install/Upgrade setuptools by :
+`pip3 install --upgrade pip setuptools`
+- Install requirements by :
+`pip3 install -U -r requirements.txt`
+- Fill your variables in config by :
+`vi config.py`
+
+Press `I` on the keyboard for editing config
+
+Press `Ctrl+C` when you're done with editing config and `:wq` to save the config
+- Install tmux to keep running your bot when you close the terminal by :
+`sudo apt install tmux && tmux`
+- Finally run the bot by :
+`python3 chatgpt.py`
+- For getting out from tmux session
+
+Press `Ctrl+b` and then `d`
 <i>sᴀᴍᴘʟᴇ ʙᴏᴛ ɪs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ, ʏᴏᴜ ᴄᴀɴ ᴄʜᴇᴀᴋ ᴛʜᴀᴛ.</i>
 
 
 <details>
 <summary>sᴀᴍᴘʟᴇ ʙᴏᴛ✨</summary>
-<i> ᴀʟʟ ᴛʜᴇ ᴄᴜsᴛᴏᴍɪsᴀᴛɪᴏɴs ʟɪᴋᴇ ᴅɪғғᴇʀᴇɴᴛ sᴛᴀʀᴛ ɪᴍᴀɢᴇs ᴀɴᴅ ᴅɪғғᴇʀᴇɴᴛ sᴛɪᴄᴋᴇʀs ᴀʀᴇ ᴀᴠᴀɪʟᴀʙʟᴇ. ᴢᴅᴛ ᴄʜᴇᴀᴋ ᴛʜᴇ ᴠᴀʀs ᴀɴᴅ ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏsɪᴛᴏʀʏ.</i>
+<i> ᴀʟʟ ᴛʜᴇ ᴄᴜsᴛᴏᴍɪsᴀᴛɪᴏɴs ʟɪᴋᴇ ᴅɪғғᴇʀᴇɴᴛ sᴛᴀʀᴛ ɪᴍᴀɢᴇs ᴀɴᴅ ᴅɪғғᴇʀᴇɴᴛ sᴛɪᴄᴋᴇʀs ᴀʀᴇ ᴀᴠᴀɪʟᴀʙʟᴇ. ᴢsᴛ ᴄʜᴇᴀᴋ ᴛʜᴇ ᴠᴀʀs ᴀɴᴅ ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏsɪᴛᴏʀʏ.</i>
 <p align="center"><a href="https://t.me/CHATGPTAI_TG_BOT"> <img src="https://img.shields.io/badge/Sample%20Bot-pink?style=for-the-badge" width="220" height="38.45"/></a></p>
 </details>
 
