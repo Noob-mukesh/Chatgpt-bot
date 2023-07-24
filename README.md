@@ -133,9 +133,9 @@ Press `Ctrl+C` when you're done with editing config and `:wq` to save the config
 - For getting out from tmux session
 
 Press `Ctrl+b` and then `d`
+
+
 <i>sᴀᴍᴘʟᴇ ʙᴏᴛ ɪs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ, ʏᴏᴜ ᴄᴀɴ ᴄʜᴇᴀᴋ ᴛʜᴀᴛ.</i>
-
-
 <details>
 <summary>sᴀᴍᴘʟᴇ ʙᴏᴛ✨</summary>
 <i> ᴀʟʟ ᴛʜᴇ ᴄᴜsᴛᴏᴍɪsᴀᴛɪᴏɴs ʟɪᴋᴇ ᴅɪғғᴇʀᴇɴᴛ sᴛᴀʀᴛ ɪᴍᴀɢᴇs ᴀɴᴅ ᴅɪғғᴇʀᴇɴᴛ sᴛɪᴄᴋᴇʀs ᴀʀᴇ ᴀᴠᴀɪʟᴀʙʟᴇ. ᴢsᴛ ᴄʜᴇᴀᴋ ᴛʜᴇ ᴠᴀʀs ᴀɴᴅ ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏsɪᴛᴏʀʏ.</i>
