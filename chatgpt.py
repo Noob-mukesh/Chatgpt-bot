@@ -1,6 +1,6 @@
 
 #-----------CREDITS -----------
-# telegram : @itz_legend_coder
+# telegram : @legend_coder
 # github : noob-mukesh
 from pyrogram import Client, filters,enums,idle
 from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid
@@ -148,7 +148,7 @@ async def source(bot, m):
     
     await m.reply_photo(START_IMG, caption=SOURCE_TEXT, reply_markup=SOURCE_BUTTONS)
 #  alive
-@Mukesh.on_message(filters.command(["ping","alive"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
+@Mukesh.on_message(filters.command(["ping","alive"], prefixes=["+", "/", "-", "?", "$", "&","."]))
 async def ping(client, message: Message):
         start = datetime.now()
         t = "ριиgιиg..."
@@ -167,7 +167,7 @@ async def ping(client, message: Message):
 
 #  main   
 openai.api_key = OPENAI_KEY
-@Mukesh.on_message(filters.command(["chatgpt","ai","ask"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
+@Mukesh.on_message(filters.command(["chatgpt","ai","ask"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
 async def chat(bot, message):
     
     try:
@@ -177,56 +177,53 @@ async def chat(bot, message):
             await message.reply_text(
             "Example:**\n\n`/chatgpt Where is TajMahal?`")
         else:
-
             a = message.text.split(' ', 1)[1]
             MODEL = "gpt-3.5-turbo"
             resp = openai.ChatCompletion.create(model=MODEL,messages=[{"role": "user", "content": a}],
     temperature=0.2,
-)
-
-            x=resp['choices'][0]["message"]["content"]
+)            x=resp['choices'][0]["message"]["content"]
             end_time = time.time()
             telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ᴍs"
             await message.reply_text(f"{message.from_user.first_name} ᴀꜱᴋᴇᴅ:\n\n {a} \n\n {BOT_NAME} ᴀɴꜱᴡᴇʀᴇᴅ:-\n\n {x}\n\n✨ᴛɪᴍᴇ ᴛᴀᴋᴇɴ  {telegram_ping} \n\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{BOT_USERNAME} ", parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup(X))     
     except Exception as e:
-        await message.reply_text(f"**ᴇʀʀᴏʀ:    {e} ")
-openai.api_key = OPENAI_KEY
-@Mukesh.on_message(filters.command(["image","photo","img","generate"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"] ))
+        await message.reply_text(f"**ᴇʀʀᴏʀ: {e} ")
 
-async def chat(bot, message):
-
+#  bard 
+bard = Bard(token=BARD_TOKEN)
+@mukesh.on_message(filters.command("bard"))
+async def bard(bot, message):
     try:
-
-
-
         start_time = time.time()
-
-        await bot.send_chat_action(message.chat.id, ChatAction.UPLOAD_PHOTO)
-
+        await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
         if len(message.command) < 2:
-
             await message.reply_text(
-
-            "**Example:**\n\n`/generate a white siamese cat`")
-
+            "Example:**\n\n` /bard How r u? `")
         else:
-
             a = message.text.split(' ', 1)[1]
-
-            response= openai.Image.create(prompt=a ,n=1,size="1024x1024")
-
-            image_url = response['data'][0]['url']
-
-            end_time = time.time()
-
-            telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ᴍs"
-
-            await message.reply_photo(image_url,caption=f"✨ᴛɪᴍᴇ ᴛᴀᴋᴇɴ {telegram_ping} ",parse_mode=ParseMode.DISABLED,reply_markup=InlineKeyboardMarkup(X)) 
-
+        response=bard.get_answer(f"{a}")["content"]
+        await message.reply_text(f"{response}\n\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{BOT_USERNAME} ", parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup(X))     
     except Exception as e:
+        await message.reply_text(f"**ᴇʀʀᴏʀ:  {e} ")
 
+    
+openai.api_key = OPENAI_KEY
+@Mukesh.on_message(filters.command(["image","photo","img","generate"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"] ))
+async def chat(bot, message):
+    try:
+        start_time = time.time()
+        await bot.send_chat_action(message.chat.id, ChatAction.UPLOAD_PHOTO)
+        if len(message.command) < 2:
+            await message.reply_text(
+            "**Example:**\n\n`/generate a white siamese cat`")
+        else:
+            a = message.text.split(' ', 1)[1]
+            response= openai.Image.create(prompt=a ,n=1,size="1024x1024")
+            image_url = response['data'][0]['url']
+            end_time = time.time()
+            telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ᴍs"
+            await message.reply_photo(image_url,caption=f"✨ᴛɪᴍᴇ ᴛᴀᴋᴇɴ {telegram_ping} ",parse_mode=ParseMode.DISABLED,reply_markup=InlineKeyboardMarkup(X)) 
+    except Exception as e:
             await message.reply_text(f"**ᴇʀʀᴏʀ: **  ` {e} `")
-
 openai.api_key = OPENAI_KEY
 @Mukesh.on_message(filters.command(["text","audiototext","lyrics"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
 async def chat(bot, message):
@@ -246,7 +243,8 @@ async def chat(bot, message):
     except Exception as e:
         await message.reply_text(f"**ᴇʀʀᴏʀ: **  ` {e} `")
 
-    
+
+
 s = bytearray.fromhex("68 74 74 70 73 3A 2F 2F 67 69 74 68 75 62 2E 63 6F 6D 2F 4E 6F 6F 62 2D 6D 75 6B 65 73 68 2F 43 68 61 74 67 70 74 2D 62 6F 74").decode()
 
 if SOURCE != s:
