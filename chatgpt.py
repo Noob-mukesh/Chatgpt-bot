@@ -180,8 +180,8 @@ async def chat(bot, message):
             a = message.text.split(' ', 1)[1]
             MODEL = "gpt-3.5-turbo"
             resp = openai.ChatCompletion.create(model=MODEL,messages=[{"role": "user", "content": a}],
-    temperature=0.2,
-)            x=resp['choices'][0]["message"]["content"]
+    temperature=0.2)
+            x=resp['choices'][0]["message"]["content"]
             end_time = time.time()
             telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ᴍs"
             await message.reply_text(f"{message.from_user.first_name} ᴀꜱᴋᴇᴅ:\n\n {a} \n\n {BOT_NAME} ᴀɴꜱᴡᴇʀᴇᴅ:-\n\n {x}\n\n✨ᴛɪᴍᴇ ᴛᴀᴋᴇɴ  {telegram_ping} \n\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{BOT_USERNAME} ", parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup(X))     
