@@ -19,7 +19,7 @@
         },  
         "OWNER_USERNAME": {
             "description": "Owner Username without @",
-            "required": false
+            "required": true
         },    
         "OPENAI_KEY": {
             "description":"OPEN-AI key here: extract from https://platform.openai.com/account/api-keys",
@@ -27,20 +27,20 @@
         },
         "BARD_TOKEN": {
             "description":"BARD_TOKEN key here: extract from https://bard.google.com/",
-            "required": true
+            "required": false
         },
         "BOT_USERNAME": {
             "description": "telegram bot username here without @",
-            "required": false
+            "required": true
         },
         "BOT_NAME": {
             "description": "Simple Bot-name. Do not use Modified Text..",
-            "required": false
+            "required": true
         },
         
         "SUPPORT_GRP": {
             "description": "Your Support Group without @",
-            "required": false
+            "required": true
         },
         "STKR": {
             "description": "Sticker for start ",
@@ -52,11 +52,11 @@
         },
         "UPDATE_CHNL": {
             "description": "Your Updates Channel without @",
-            "required": false
+            "required": true
         },
         "SUPPORT_GRP": {
             "description": "Your Support Group without @",
-            "required": false
+            "required": true
         },
         "API_ID": {
             "description": "telegram api id here",
