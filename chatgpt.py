@@ -271,5 +271,5 @@ GIVE STAR TO THE REPO
     Mukesh.stop()
     print("Bot stopped. Bye !")
 #-----------CREDITS -----------
-# telegram : @itz_legend_coder
+# telegram : @legend_coder
 # github : noob-mukesh
