@@ -163,12 +163,10 @@ Press `Ctrl+b` and then `d`</details>
 
 ### ᴄʀᴇᴅɪᴛs 
 # 
-<b> [─╼⃝𖠁 ᴍᴜᴋᴇsʜ 𖠁⃝╾─•](https://telegram.me/LEGEND_CODER) <br> <br>
+<b> [─╼⃝𖠁 ᴍᴜᴋᴇsʜ 𖠁⃝╾─•](https://telegram.me/legend_coder) <br> <br>
  [­ 𝔼𝕣𝕖𝕟](https://telegram.me/WH0907)  </br> <br>
-<details>
-<summary><i>ᴀ ᴍᴇssᴀɢᴇ ғᴏʀ ʏᴏᴜ!</i></summary>
-<p><i> ᴅᴏɴ'ᴛ  ғᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴛʜᴇ 🌠</i></p>
-</details>
+
+<p><i> ᴅᴏɴ'ᴛ  ғᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴛʜᴇ  ꜱᴛᴀʀ </i></p>
 
 
   
