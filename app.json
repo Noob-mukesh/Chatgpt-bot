@@ -25,6 +25,10 @@
             "description":"OPEN-AI key here: extract from https://platform.openai.com/account/api-keys",
             "required": true
         },
+        "BARD_TOKEN": {
+            "description":"BARD_TOKEN key here: extract from https://bard.google.com/",
+            "required": true
+        },
         "BOT_USERNAME": {
             "description": "telegram bot username here without @",
             "required": false
