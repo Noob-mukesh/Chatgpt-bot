@@ -189,7 +189,12 @@ async def chat(bot, message):
         await message.reply_text(f"**ᴇʀʀᴏʀ: {e} ")
 
 #  bard 
-bard = Bard(token=BARD_TOKEN)
+try :
+    bard=Bard(token_from_browser=True)
+except Exception as e:
+    print(e)
+else:
+    bard = Bard(token=BARD_TOKEN)   
 @Mukesh.on_message(filters.command("bard"))
 async def bard_bot(bot, message):
     try:
