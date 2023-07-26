@@ -6,7 +6,9 @@
     "telegram",
     "chatgpt",
     "python",
-    "pyrogram"
+    "pyrogram",
+    "Noob-Mukesh",   
+        
   ],
     "buildpacks": [{
     "url": "heroku/python"
@@ -44,11 +46,11 @@
         },
         "STKR": {
             "description": "Sticker for start ",
-            "required": false
+            "required": true
         },
         "START_IMG": {
             "description": "Start Image For Bot.",
-            "required": false
+            "required": true
         },
         "UPDATE_CHNL": {
             "description": "Your Updates Channel without @",
