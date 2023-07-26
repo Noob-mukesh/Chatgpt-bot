@@ -204,8 +204,8 @@ async def bard_bot(bot, message):
             "Example:**\n\n` /bard How r u? `")
         else:
             a = message.text.split(' ', 1)[1]
-        response=bard.get_answer(f"{a}")["content"]
-        await message.reply_text(f"{response}\n\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{BOT_USERNAME} ", parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup(X))     
+            response=bard.get_answer(f"{a}")["content"]
+            await message.reply_text(f"{response}\n\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{BOT_USERNAME} ", parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup(X))     
     except Exception as e:
         await message.reply_text(f"**ᴇʀʀᴏʀ:  {e} ")
 
