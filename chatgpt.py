@@ -107,7 +107,8 @@ HELP_BACK = [
   
 #         start
 @Mukesh.on_message(filters.command(["start",f"start@{BOT_USERNAME}"]))
-async def restart(client, m: Message):
+async def start(client, m: Message):
+    try:
         accha = await m.reply_text(
                         text = f"{g}")
         await asyncio.sleep(0.2)
@@ -124,6 +125,8 @@ async def restart(client, m: Message):
             caption=START,
             reply_markup=InlineKeyboardMarkup(MAIN),
         )
+    except Exception as y:
+        await m.reply(y)
 #  callback 
 @Mukesh.on_callback_query()
 async def cb_handler(Client, query: CallbackQuery):
@@ -189,12 +192,8 @@ async def chat(bot, message):
         await message.reply_text(f"**ᴇʀʀᴏʀ: {e} ")
 
 #  bard 
-try :
-    bard=Bard(token_from_browser=True)
-except Exception as e:
-    print(e)
-else:
-    bard = Bard(token=BARD_TOKEN)   
+
+bard = Bard(token=BARD_TOKEN)   
 @Mukesh.on_message(filters.command("bard"))
 async def bard_bot(bot, message):
     try:
