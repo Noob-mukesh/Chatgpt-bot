@@ -191,7 +191,7 @@ async def chat(bot, message):
 #  bard 
 bard = Bard(token=BARD_TOKEN)
 @Mukesh.on_message(filters.command("bard"))
-async def bard(bot, message):
+async def bard_bot(bot, message):
     try:
         start_time = time.time()
         await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
