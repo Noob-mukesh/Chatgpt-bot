@@ -190,7 +190,7 @@ async def chat(bot, message):
 
 #  bard 
 bard = Bard(token=BARD_TOKEN)
-@mukesh.on_message(filters.command("bard"))
+@Mukesh.on_message(filters.command("bard"))
 async def bard(bot, message):
     try:
         start_time = time.time()
