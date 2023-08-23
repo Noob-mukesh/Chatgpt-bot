@@ -193,7 +193,7 @@ async def chat(bot, message):
 
 #  bard 
 
-bard = Bard(token=BARD_TOKEN)   
+'''bard = Bard(token=BARD_TOKEN)   
 @Mukesh.on_message(filters.command("bard"))
 async def bard_bot(bot, message):
     try:
@@ -209,7 +209,7 @@ async def bard_bot(bot, message):
     except Exception as e:
         await message.reply_text(f"**ᴇʀʀᴏʀ:  {e} ")
 
-    
+    '''
 openai.api_key = OPENAI_KEY
 @Mukesh.on_message(filters.command(["image","photo","img","generate"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"] ))
 async def chat(bot, message):
