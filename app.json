@@ -1,73 +1,65 @@
+
 {
-    "name": "Chat-Gpt",
-    "description": "A Telegram open-ai Chatgpt bot.",
-    "logo": "https://te.legra.ph/file/9fa2101b77407dbec7d31.jpg",
-    "keywords": [
-    "telegram",
-    "chatgpt",
+  "name": "Chat-Gpt",
+  "description": "A Telegram open-ai Chatgpt bot.",
+  "logo": "https://te.legra.ph/file/9fa2101b77407dbec7d31.jpg",
+  "keywords": [
+    "telegram", "chatgpt",
     "python",
     "pyrogram",
-    "Noob-Mukesh",   
-        
+    "Noob-Mukesh"   
   ],
-     "stack": "heroku-22",
- "addons": [
+  "stack": "heroku-20",
+  "addons": [
     {
-       "options": {
-          "version": "12"
-       },
-       "plan": "heroku-postgresql"
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
     }
- ],
-    "repository": "https://github.com/noob-mukesh/Chatgpt-bot",
-    "env": {
-        "BOT_TOKEN": {
-            "description": "telegram bot token here",
-            "required": true
-        },  
-        "OWNER_USERNAME": {
-            "description": "Owner Username without @",
-            "required": true
-        },    
-        "OPENAI_KEY": {
-            "description":"OPEN-AI key here: extract from https://platform.openai.com/account/api-keys",
-            "required": true
-        },
-        "BOT_USERNAME": {
-            "description": "telegram bot username here without @",
-            "required": true
-        },
-        "BOT_NAME": {
-            "description": "Simple Bot-name. Do not use Modified Text..",
-            "required": true
-        },
-        
-        "SUPPORT_GRP": {
-            "description": "Your Support Group without @",
-            "required": true
-        },
-        "STKR": {
-            "description": "Sticker for start ",
-            "required": true
-        },
-        "START_IMG": {
-            "description": "Start Image For Bot.",
-            "required": true
-        },
-        "UPDATE_CHNL": {
-            "description": "Your Updates Channel without @",
-            "required": true
-        },
-        "SUPPORT_GRP": {
-            "description": "Your Support Group without @",
-            "required": true
-        },
-        "API_ID": {
-            "description": "telegram api id here",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "telegram api hash here",
-            "required": true
-        }
-    }}
+  ],
+  "env": {
+    "BOT_TOKEN": { "description": "telegram bot token here",
+      "required": true
+    },
+    "OWNER_USERNAME": {
+      "description": "Owner Username without @",
+      "required": true
+    },
+    "OPENAI_KEY": {
+      "description": "OPEN-AI key here: extract from https://platform.openai.com/account/api-keys",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "telegram bot username here without @",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Simple Bot-name. Do not use Modified Text..",
+      "required": true
+    },
+    "SUPPORT_GRP": {
+      "description": "Your Support Group without @",
+      "required": true
+    },
+    "STKR": {
+      "description": "Sticker for start", "required": true
+    },
+    "START_IMG": {
+      "description": "Start Image For Bot.",
+      "required": true
+    },
+    "UPDATE_CHNL": {
+      "description": "Your Updates Channel without @",
+      "required": true
+    },
+    "API_ID": { "description": "telegram api id here",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "telegram api hash here",
+      "required": true
+    }
+  },
+  "repository": "https://github.com/noob-mukesh/Chatgpt-bot"
+}
