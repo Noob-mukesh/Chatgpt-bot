@@ -69,5 +69,4 @@
             "description": "telegram api hash here",
             "required": true
         }
-    },
-}
+    }}
