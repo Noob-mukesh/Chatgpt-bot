@@ -10,14 +10,15 @@
     "Noob-Mukesh",   
         
   ],
-    "buildpacks": [{
-    "url": "heroku/python"
-  }],
-  "addons": [
-        {
-            "plan": "heroku-postgresql"
-        }
-  ],
+     "stack": "heroku-22",
+ "addons": [
+    {
+       "options": {
+          "version": "12"
+       },
+       "plan": "heroku-postgresql"
+    }
+ ],
     "repository": "https://github.com/noob-mukesh/Chatgpt-bot",
     "env": {
         "BOT_TOKEN": {
