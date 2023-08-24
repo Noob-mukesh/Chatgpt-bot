@@ -13,7 +13,12 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-  "repository": "https://github.com/noob-mukesh/Chatgpt-bot",
+  "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+  ],
+    "repository": "https://github.com/noob-mukesh/Chatgpt-bot",
     "env": {
         "BOT_TOKEN": {
             "description": "telegram bot token here",
@@ -65,9 +70,4 @@
             "required": true
         }
     },
-    "addons": [
-        {
-            "plan": "heroku-postgresql"
-        }
-    ]
 }
