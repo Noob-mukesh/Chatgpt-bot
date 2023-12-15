@@ -43,7 +43,8 @@
       "required": true
     },
     "STKR": {
-      "description": "Sticker for start", "required": true
+      "description": "Sticker for start", 
+      "required": true
     },
     "START_IMG": {
       "description": "Start Image For Bot.",
