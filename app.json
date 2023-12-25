@@ -26,10 +26,6 @@
       "description": "Owner Username without @",
       "required": true
     },
-    "OPENAI_KEY": {
-      "description": "OPEN-AI key here: extract from https://platform.openai.com/account/api-keys",
-      "required": true
-    },
     "BOT_USERNAME": {
       "description": "telegram bot username here without @",
       "required": true
