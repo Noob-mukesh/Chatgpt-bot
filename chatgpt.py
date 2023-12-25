@@ -6,7 +6,7 @@ from pyrogram import Client, filters,enums,idle
 from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.enums import ChatAction, ParseMode
-import openai
+
 from pyrogram.types import CallbackQuery
 from config import *
 import os,sys,re,requests
@@ -169,7 +169,7 @@ async def ping(client, message: Message):
        )
 
 #  main   
-openai.api_key = OPENAI_KEY
+
 @Mukesh.on_message(filters.command(["chatgpt","ai","ask"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
 async def chat(bot, message):
     
@@ -181,10 +181,8 @@ async def chat(bot, message):
             "Example:**\n\n`/chatgpt Where is TajMahal?`")
         else:
             a = message.text.split(' ', 1)[1]
-            MODEL = "gpt-3.5-turbo"
-            resp = openai.ChatCompletion.create(model=MODEL,messages=[{"role": "user", "content": a}],
-    temperature=0.2)
-            x=resp['choices'][0]["message"]["content"]
+            response = requests.get(f'https://mukesh-api.vercel.app/chatgpt/{a}') 
+            x=response.json()["results"]
             end_time = time.time()
             telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ᴍs"
             await message.reply_text(f"{message.from_user.first_name} ᴀꜱᴋᴇᴅ:\n\n {a} \n\n {BOT_NAME} ᴀɴꜱᴡᴇʀᴇᴅ:-\n\n {x}\n\n✨ᴛɪᴍᴇ ᴛᴀᴋᴇɴ  {telegram_ping} \n\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{BOT_USERNAME} ", parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup(X))     
