@@ -33,4 +33,4 @@ RUN pip3 install -r requirements.txt
 RUN dpkg-reconfigure locales
 COPY . /app
 
-CMD ["python3", "chatgpt"]
+CMD ["python3", "Chatgpt"]

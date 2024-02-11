@@ -1,1 +1,1 @@
-Mukesh: python3 chatgpt
+Mukesh: python3 Chatgpt
