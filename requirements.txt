@@ -3,4 +3,5 @@ requests
 dnspython
 tgcrypto
 asyncio
-
+pymongo
+motor
