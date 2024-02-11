@@ -15,14 +15,14 @@ async def bard_chat(bot, message):
     global x
     if len(message.command) < 2:
             await message.reply_text(
-            "Example:**\n\n`/bard write simple flask app using python?`")
+            "Example:**\n\n`/bard write shorts notes on human eyes`")
     else:
         a = message.text.split(' ', 1)[1]
     
     try:
         response = requests.get(f'https://mukesh-api.vercel.app/bard?query={a}') 
         if response.status_code==200:
-            await bot.send_chat_action(chat_id, enums.ChatAction.TYPING)
+            await bot.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
             x=response.json()["results"]
             
             await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
