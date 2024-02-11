@@ -27,8 +27,8 @@ async def blackbox_chat(bot, message):
                 
         response = requests.get(f'https://mukesh-api.vercel.app/blackbox?query={a}') 
         if response.status_code==200:
-            x=response,json()["results"]
-               
+            x=response.json()["results"]
+            
     except requests.exceptions.RequestException as e:
 
         response = requests.get(f'https://mukesh-api.vercel.app/chatgpt?query={a}') 
@@ -39,7 +39,8 @@ async def blackbox_chat(bot, message):
         if response.status_code==200:
             x=response.json()["results"]
     finally:
-        await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True,disable_web_page_preview=True)  
+        if x in locals():
+            await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True,disable_web_page_preview=True)  
         
 
 

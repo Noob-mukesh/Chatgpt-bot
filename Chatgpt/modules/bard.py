@@ -9,7 +9,6 @@ from .. import Mukesh
 from config import *
 from ..modules.buttons import *
 #  bard 
-
 @Mukesh.on_message(filters.command(["bard"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
 async def bard_chat(bot, message):
     if len(message.command) < 2:
@@ -17,12 +16,13 @@ async def bard_chat(bot, message):
             "Example:**\n\n`/bard write simple flask app using python?`")
     else:
         a = message.text.split(' ', 1)[1]
+    
     try:
         
         response = requests.get(f'https://mukesh-api.vercel.app/bard?query={a}') 
         if response.status_code==200:
             x=response,json()["results"]
-               
+            
     except requests.exceptions.RequestException as e:
 
         response = requests.get(f'https://mukesh-api.vercel.app/chatgpt?query={a}') 
@@ -36,4 +36,5 @@ async def bard_chat(bot, message):
         if response.status_code==200:
             x=response.json()["results"]
     finally:
-        await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
+        if x in locals():
+            await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
