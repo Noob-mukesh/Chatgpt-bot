@@ -25,4 +25,3 @@ async def save_id(user_id: int):
     if is_served:
         return
     return usersdb.insert_one({"user_id": user_id})
-    # return f'added {user_id} to database successfully'
