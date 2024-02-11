@@ -11,19 +11,26 @@ from pyrogram.enums import ChatAction
 #  chatgpt 
 
 @Mukesh.on_message(filters.command(["chatgpt","ai","ask"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
-async def chat(bot, message):
-    
-    try:
-
-        await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
-        if len(message.command) < 2:
+async def chatgpt_chat(bot, message):
+    if len(message.command) < 2:
             await message.reply_text(
-            "Example:**\n\n`/chatgpt Where is TajMahal?`")
-        else:
-            a = message.text.split(' ', 1)[1]
-            response = requests.get(f'https://mukesh-api.vercel.app/chatgpt?query={a}') 
+            "Example:**\n\n`/chatgpt write simple website code using html css ,js?`")
+    else:
+        a = message.text.split(' ', 1)[1]
+    try:
+        
+        response = requests.get(f'https://mukesh-api.vercel.app/chatgpt?query={a}') 
+        if response.status_code==200:
+            x=response,json()["results"]
+               
+    except requests.exceptions.RequestException as e:
+
+        response = requests.get(f'https://mukesh-api.vercel.app/blackbox?query={a}') 
+        if response.status_code==200:
             x=response.json()["results"]
-    
-            await message.reply_text(f"{x}\n\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)     
-    except Exception as e:
-        await message.reply_text(f"**ᴇʀʀᴏʀ: {e} ")
+    except requests.exceptions.RequestException as e:
+        response = requests.get(f'https://mukesh-api.vercel.app/bard?query={a}') 
+        if response.status_code==200:
+            x=response.json()["results"]
+    finally:
+        await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  

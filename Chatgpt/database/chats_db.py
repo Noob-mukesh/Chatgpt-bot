@@ -22,6 +22,9 @@ async def is_served_chat(chat_id: int) -> bool:
 
 async def chat_id(chat_id: int):
     is_served = await is_served_chat(chat_id)
+    # CREDITS
+# TELEGRAM : @Mr_Sukkun
+#  GITHUB : NOOB-MUKESH
     if is_served:
         return
     return await chatsdb.insert_one({"chat_id": chat_id})

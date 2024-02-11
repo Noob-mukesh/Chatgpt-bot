@@ -1,5 +1,5 @@
 # -----------CREDITS -----------
-# telegram : @legend_coder
+# telegram : @Mr_Sukkun
 # github : noob-mukesh
 from pyrogram import filters
 import asyncio

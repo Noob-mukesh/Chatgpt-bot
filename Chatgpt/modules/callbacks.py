@@ -1,3 +1,7 @@
+# CREDITS
+# TELEGRAM : @Mr_Sukkun
+#  GITHUB : NOOB-MUKESH
+
 from pyrogram.types import InlineKeyboardButton as IKB, InlineKeyboardMarkup as IKM,CallbackQuery
 from pyrogram import Client
 from .. import Mukesh
