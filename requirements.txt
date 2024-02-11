@@ -3,5 +3,4 @@ requests
 dnspython
 tgcrypto
 asyncio
-openai==0.27.2
-bardapi
+
