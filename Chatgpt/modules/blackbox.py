@@ -11,10 +11,11 @@ from ..modules.buttons import *
 
 
 
-
+x=None
 #blackbox
 @Mukesh.on_message(filters.command(["blackbox"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
 async def blackbox_chat(bot, message):
+    global x
     if len(message.command) < 2:
             await message.reply_text(
             "Example:**\n\n`/blackbox how r u?`")
@@ -39,8 +40,7 @@ async def blackbox_chat(bot, message):
         if response.status_code==200:
             x=response.json()["results"]
     finally:
-        if x in locals():
-            await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True,disable_web_page_preview=True)  
+        await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True,disable_web_page_preview=True)  
         
 
 

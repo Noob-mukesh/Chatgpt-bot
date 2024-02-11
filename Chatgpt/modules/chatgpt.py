@@ -9,9 +9,10 @@ from config import *
 from ..modules.buttons import *
 from pyrogram.enums import ChatAction
 #  chatgpt 
-
+x=None
 @Mukesh.on_message(filters.command(["chatgpt","ai","ask"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
 async def chatgpt_chat(bot, message):
+    global x
     if len(message.command) < 2:
             await message.reply_text(
             "Example:**\n\n`/chatgpt write simple website code using html css ,js?`")
@@ -33,5 +34,4 @@ async def chatgpt_chat(bot, message):
         if response.status_code==200:
             x=response.json()["results"]
     finally:
-        if x in locals():
-            await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
+        await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
