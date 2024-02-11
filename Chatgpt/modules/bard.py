@@ -20,22 +20,16 @@ async def bard_chat(bot, message):
         a = message.text.split(' ', 1)[1]
     
     try:
-        
         response = requests.get(f'https://mukesh-api.vercel.app/bard?query={a}') 
         if response.status_code==200:
+            await bot.send_chat_action(chat_id, enums.ChatAction.TYPING)
             x=response.json()["results"]
             
-    except requests.exceptions.RequestException as e:
+            await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
+        else:
+            pass
 
-        response = requests.get(f'https://mukesh-api.vercel.app/chatgpt?query={a}') 
-        if response.status_code==200:
-            x=response.json()["results"]
-        # CREDITS
-        # TELEGRAM : @Mr_Sukkun
-        #  GITHUB : NOOB-MUKESH
+            
     except requests.exceptions.RequestException as e:
-        response = requests.get(f'https://mukesh-api.vercel.app/blackbox?query={a}') 
-        if response.status_code==200:
-            x=response.json()["results"]
-    finally:
-        await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
+        pass
+        
