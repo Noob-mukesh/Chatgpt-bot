@@ -1,4 +1,4 @@
-# ᴄʜᴀᴛɢᴘᴛ + ɢᴏᴏɢʟᴇ ʙᴀʀᴅ
+# ᴄʜᴀᴛɢᴘᴛ + ɢᴏᴏɢʟᴇ ʙᴀʀᴅ +
 <h4>ᴀʙᴏᴜᴛ ᴍᴇ!</h4>
 <pre><b>ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴛᴇʟᴇɢʀᴀᴍ ᴀɪ ʙᴏᴛ </b></pre>
 
@@ -88,17 +88,6 @@
 </i></pre>
 </details>
  ━━━━━━━━━━━━━━━━━━━━━━
-<h3> ᴀᴜᴛʜᴇɴᴛɪᴄᴀᴛɪᴏɴ </h3>
-<h2> ᴄʜᴀᴛɢᴘᴛ </h2>
-ɢᴇᴛ ᴛᴏᴋᴇɴ ꜰʀᴏᴍ :  https://platform.openai.com/account/api-keys
-ᴀꜰᴛᴇʀ ꜱɪɴɢɴᴜᴘ
-ᴄᴏᴘʏ ᴛʜᴇ ᴠᴀʟᴜᴇꜱ<br>
-<h2> ɢᴏᴏɢʟᴇ ʙᴀʀᴅ </h2>
-1.ɢᴏ ᴛᴏ :  https://bard.google.com/  ᴀꜰᴛᴇʀ ɪɴɢɴᴜᴘ<br>
-2.ᴘʀᴇꜱꜱ ꜰ12 ꜰᴏʀ ᴄᴏɴꜱᴏʟᴇ <br>
-3.ꜱᴇꜱꜱɪᴏɴ: ɢᴏ ᴛᴏ ᴀᴘᴘʟɪᴄᴀᴛɪᴏɴ → ᴄᴏᴏᴋɪᴇꜱ → <br>
-4 ꜰɪɴᴅ .__Secure-1PSID <br>
-5. ᴄᴏᴘʏ ᴛʜᴇ ᴠᴀʟᴜᴇꜱ<br>
  ━━━━━━━━━━━━━━━━━━━━━━
 <h3> ʜᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ </h3>
 <h2> <a href="https://youtu.be/Onq2zNgVQ-U"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/Onq2zNgVQ-U",width="500" height="70">
@@ -140,7 +129,7 @@ Press `Ctrl+C` when you're done with editing config and `:wq` to save the config
 - Install tmux to keep running your bot when you close the terminal by :
 `sudo apt install tmux && tmux`
 - Finally run the bot by :
-`python3 chatgpt.py`
+`python3 Chatgpt`
 - For getting out from tmux session
 
 Press `Ctrl+b` and then `d`</details>

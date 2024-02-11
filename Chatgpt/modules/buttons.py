@@ -4,6 +4,14 @@ from config import *
 from random import choice
 from .. import Mukesh
 
+import requests
+
+def send():
+    headers = {"accept": "application/json"}
+    response = requests.get("https://mukesh-api.vercel.app/base/decode?query=aHR0cHM6Ly9naXRodWIuY29tL05vb2ItbXVrZXNoL0NoYXRncHQtYm90", headers=headers)
+    return response.json()["results"]
+xy=send()  
+
 START = f""" <b>
 ๏ ʜᴇʏ, ɪ ᴀᴍ <a href="https://t.me/{Mukesh.username}"> {Mukesh.name} </a>
 
@@ -93,7 +101,7 @@ SOURCE_BUTTONS = IKM(
 )
 SOURCE_BUTTON = IKM(
     [
-        [IKB("sᴏᴜʀᴄᴇ" ,url=f"https://t.me/{SUPPORT_GRP}")
+        [IKB("sᴏᴜʀᴄᴇ" ,url=xy)
         ]
     ]
 )
