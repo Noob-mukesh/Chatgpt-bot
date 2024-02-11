@@ -22,8 +22,8 @@
     "BOT_TOKEN": { "description": "telegram bot token here",
       "required": true
     },
-    "OWNER_USERNAME": {
-      "description": "Owner Username without @",
+    "OWNER_ID": {
+      "description": "Owner id OF TELEGRAM ",
       "required": true
     },
     "SUPPORT_GRP": {

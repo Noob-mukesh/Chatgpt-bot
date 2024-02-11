@@ -29,10 +29,15 @@ SOURCE_TEXT = f"""<b>
 ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ</b>
 """
 HELP = f"""<b>➻ ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ᴏғ  {Mukesh.mention}
-**➻ ᴜsᴀɢᴇ** /chatgpt <prompt> ᴇxᴀᴍᴘʟᴇ: `/chatgpt write shorts notes of electricity`
-**➻ ᴜsᴀɢᴇ** /bard <prompt> ᴇxᴀᴍᴘʟᴇ: `/bard write a simple flask app in python.`
-**➻ ᴜsᴀɢᴇ** /blackbox <prompt> ᴇxᴀᴍᴘʟᴇ: `/blackbox write a simple website using python.`
-**➻ ᴜsᴀɢᴇ** /ping ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.
+/chatgpt <prompt> ᴇxᴀᴍᴘʟᴇ: `/chatgpt write shorts notes of electricity`
+/bard <prompt> ᴇxᴀᴍᴘʟᴇ: `/bard write a simple flask app in python.`
+/blackbox <prompt> ᴇxᴀᴍᴘʟᴇ: `/blackbox write a simple website using python.`
+/ping ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.
+/source Tᴏ ɢᴇᴛ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ,
+/help Tᴏ ɢᴇᴛ ʜᴇʟᴘ   
+/start Tᴏ sᴛᴀʀᴛ ʙᴏᴛ
+/stats Tᴏ ɢᴇᴛ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ
+
 
 """
 
