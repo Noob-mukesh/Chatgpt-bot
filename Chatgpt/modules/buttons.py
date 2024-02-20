@@ -78,6 +78,19 @@ PNG_BTN = [
         ),
     ],
 ]
+X_BTN = [
+    [
+        IKB(
+            text="ᴀᴅᴅ ᴍᴇ ",
+            url=f"https://t.me/{Mukesh.username}?startgroup=true",
+        ),
+    ],
+    [
+        IKB("sᴜᴘᴘᴏʀᴛ",
+            url=f"https://t.me/{SUPPORT_GRP}",
+        ),
+    ],
+]
 gpt_button = [
     [
         IKB(
