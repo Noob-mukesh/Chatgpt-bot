@@ -25,11 +25,10 @@ async def chatgpt_chat(bot, message):
 
     try:
         response = api.gemini(a)
-        if response.status_code==200:
-            await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
-            x=response.json()["results"]
-            
-            await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
+        await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
+        x=response["results"]
+        
+        await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
         else:
             pass
 
