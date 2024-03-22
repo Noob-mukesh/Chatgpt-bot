@@ -8,6 +8,7 @@ from .. import Mukesh
 from config import *
 from ..modules.buttons import *
 from pyrogram.enums import ChatAction
+from MukeshAPI import api
 @Mukesh.on_message(filters.command(["chatgpt","ai","ask"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
 async def chatgpt_chat(bot, message):
     
@@ -23,12 +24,11 @@ async def chatgpt_chat(bot, message):
     
 
     try:
-        response = requests.get(f'https://mukesh-api.vercel.app/chatgpt?query={a}') 
-        if response.status_code==200:
-            await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
-            x=response.json()["results"]
-            
-            await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
+        response = api.gemini(a)
+        await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
+        x=response["results"]
+        
+        await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
         else:
             pass
 
