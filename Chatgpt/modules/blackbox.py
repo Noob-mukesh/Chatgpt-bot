@@ -27,7 +27,7 @@ async def blackbox_chat(bot, message):
         response = api.blackbox(a)
         
         await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
-        x=response.json()["results"]
+        x=response["results"]
         
         await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True,disable_web_page_preview =True)  
         else:
