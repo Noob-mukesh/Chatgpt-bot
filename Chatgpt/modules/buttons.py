@@ -7,12 +7,12 @@ from config import *
 from random import choice
 from .. import Mukesh
 
-import requests
+import requests,base64
 
 def send():
-    headers = {"accept": "application/json"}
-    response = requests.get("https://mukesh-api.vercel.app/base/decode?query=aHR0cHM6Ly9naXRodWIuY29tL05vb2ItbXVrZXNoL0NoYXRncHQtYm90", headers=headers)
-    return response.json()["results"]
+    x=base64.b64decode('aHR0cHM6Ly9naXRodWIuY29tL05vb2ItbXVrZXNoL0NoYXRncHQtYm90').decode("utf-8")
+    return x
+
 xy=send()  
 
 START = f""" <b>
