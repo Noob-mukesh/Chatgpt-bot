@@ -26,10 +26,7 @@ async def bard_chat(bot, message):
         x=response["results"]
         
         await message.reply_text(f"{x}\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{Mukesh.username} ",reply_markup=InlineKeyboardMarkup(gpt_button),quote=True)  
-        else:
-            pass
 
-            
     except requests.exceptions.RequestException as e:
         pass
         
