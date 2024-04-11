@@ -48,7 +48,10 @@
     "API_HASH": {
       "description": "telegram api hash here",
       "required": true
-    }
+    },
+    "MONGO_DB_URI":{
+    "description":"enter mongo url here",
+    "required":true
   },
   "repository": "https://github.com/noob-mukesh/Chatgpt-bot"
 }
