@@ -8,8 +8,9 @@ START_IMG = os.environ.get(
     "START_IMG", "https://graph.org/file/d4412c7b411ca8da9e177.jpg"
 )
 
-DATABASE_URI = os.environ.get(
-    "DATABASE_URI",
+MONGO_DB_URI = os.environ.get(
+    "MONGO_DB_URI",
     "",
 )
+DATABASE_URI=MONGO_DB_URI
 OWNER_ID=6728038801
