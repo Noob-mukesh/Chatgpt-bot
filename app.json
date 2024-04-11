@@ -52,6 +52,6 @@
     "MONGO_DB_URI":{
     "description":"enter mongo url here",
     "required":true
-  },
+  }},
   "repository": "https://github.com/noob-mukesh/Chatgpt-bot"
 }
