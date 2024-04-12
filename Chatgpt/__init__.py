@@ -15,7 +15,7 @@ logging.getLogger("pyrogram").setLevel(logging.ERROR)
 
 LOGGER = logging.getLogger(__name__)
 
-mongo = MongoCli(DATABASE_URI)
+mongo = MongoCli(MONGO_DB_URI)
 db = mongo.Chatgpt
 
 
