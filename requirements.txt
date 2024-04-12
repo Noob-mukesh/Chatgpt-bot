@@ -4,9 +4,9 @@ requests
 dnspython
 # tgcrypto
 asyncio
-lxml
 pymongo
 motor
 pillow
 numpy
 MukeshAPI
+lxml[html_clean]
